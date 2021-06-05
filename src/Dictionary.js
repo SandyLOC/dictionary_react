@@ -13,7 +13,7 @@ export default function Dictionary() {
     function handleWord(event) {
         setWord(event.target.value);
     }
-
+    if(loaded) {
     return(
     <div className="Dictionary">
     <form onSubmit={search} className="form"> 
@@ -22,5 +22,15 @@ export default function Dictionary() {
     </form>
     </div>
     );
+    } else {
+        return(
+            <div className="Dictionary">
+            <form onSubmit={search} className="form"> 
+                <input type="search" autoFocus={true} onChange={handleWord}></input>
+                <input type="submit"></input>
+            </form>
+            </div>
+            );
+    }
 
 }
