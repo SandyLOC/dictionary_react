@@ -10,6 +10,7 @@ export default function Dictionary() {
     function handleResponse(response) {
         console.log(response.data[0]);
     }
+    //Source documentation: https://dictionaryapi.dev/
     function search(event) {
         event.preventDefault();
         alert(`Searching for ${word}`);
