@@ -28,6 +28,7 @@ export default function Dictionary() {
         <input type="search" autoFocus={true} onChange={handleWord}></input>
         <input type="submit"></input>
     </form>
+    <h1 className="word">{word}</h1>
     </div>
     );
     } else {
