@@ -14,6 +14,7 @@ export default function Dictionary() {
         setDefinition({
             loaded: true,
             word: response.data[0].word,
+            phonetics: response.data[0].phonetics[0].text,
             definition: response.data[0].meanings[0].definitions[0].definition
         });
         alert(response.data[0].meanings[0].definitions[0].definition);
@@ -36,7 +37,7 @@ export default function Dictionary() {
         <input type="search" className="form-control" autoFocus={true} onChange={handleWord}></input>
         <input type="submit" className="btn btn-primary"></input>
     </form>
-    <div className="word"><Results results={definition}/></div>
+    <div className="results"><Results results={definition}/></div>
     </div>
     );
     } else {
