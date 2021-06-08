@@ -10,14 +10,12 @@ export default function Dictionary() {
     const [definition, setDefinition] = useState({loaded:false});
 
     function handleResponse(response) {
-        console.log(response.data[0].meanings[0].definitions);
+        console.log(response.data[0]);
         setDefinition({
             loaded: true,
-            word: response.data[0].word,
-            phonetics: response.data[0].phonetics[0].text,
+            data: response.data[0],
             definition: response.data[0].meanings[0].definitions[0].definition
         });
-        alert(response.data[0].meanings[0].definitions[0].definition);
     }
     //Source documentation: https://dictionaryapi.dev/
     function search(event) {
@@ -37,7 +35,7 @@ export default function Dictionary() {
         <input type="search" className="form-control" autoFocus={true} onChange={handleWord}></input>
         <input type="submit" className="btn btn-primary"></input>
     </form>
-    <div className="results"><Results results={definition}/></div>
+    <div className="results"><Results results={definition.data}/></div>
     </div>
     );
     } else {
