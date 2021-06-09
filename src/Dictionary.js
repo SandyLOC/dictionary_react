@@ -32,7 +32,7 @@ export default function Dictionary() {
         <div className="col-auto">
             <input type="search" className="form-control" autoFocus={true} onChange={handleWord}></input>
         </div>
-        <div className="col-sm">
+        <div className="col-sm-2">
             <input type="submit" className="btn btn-primary"></input>
         </div>
         </div>
