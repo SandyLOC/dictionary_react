@@ -3,7 +3,7 @@
     margin-bottom: 30px;
 }
 .results {
-
+    max-width: 90vh;
     text-align: initial;
     margin-right: 40px;
     margin-top: 25px;
