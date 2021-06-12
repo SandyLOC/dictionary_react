@@ -27,7 +27,7 @@ export default function Dictionary() {
         setWord(event.target.value);
     }
     let form =     
-        <form onSubmit={search} className="form"> 
+        <form onSubmit={search} className="form">
         <div className="row">
         <div className="col-auto">
             <input type="search" className="form-control" autoFocus={true} onChange={handleWord}></input>
