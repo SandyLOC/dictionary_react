@@ -3,12 +3,21 @@
     margin-bottom: 30px;
 }
 .form {
-
+    background-color: #f1f3f4;
+    padding: 10px 20px 10px 30px;
+    border-radius: 10px;
+    box-shadow: 10 30px 10px rgb(241 243 244 / 30%);
+}
+.form:hover {
+    transform: scale(1.05) perspective(1px);
+}
+.introText {
+    font-size: 20px;
+    text-align: left;
 }
 .results {
     max-width: 96vh;
     text-align: initial;
-    margin-right: 40px;
     margin-top: 25px;
 }
 .wordSearch {
@@ -16,6 +25,9 @@
     padding: 10px 20px 10px 30px;
     border-radius: 10px;
     box-shadow: 10 30px 10px rgb(241 243 244 / 30%);
+}
+.wordSearch:hover {
+    transform: scale(1.05) perspective(1px);
 }
 .phonetics {
     font-style: italic;
@@ -28,7 +40,29 @@
     border-radius: 10px;
     box-shadow: 10 30px 30px rgb(241 243 244 / 100%);
 }
+.Meaning:hover {
+    transform: scale(1.05) perspective(1px);
+}
+.definition {
+    margin-bottom: 20px;
+}
 li {
     list-style-type: none;
+    display: inline-block;
+    padding-right: 15px;
+    font-size: 15px;
 
+}
+.example {
+    font-size: 15px;
+    font-weight: 500;
+}
+.exampleStatement {
+    font-size: 15px;
+}
+.Synonyms {
+    margin-top: 14px;
+}
+.synonymsName {
+    font-size: 15px;
 }

@@ -30,8 +30,9 @@ export default function Dictionary() {
         event.preventDefault();
         search();
     }
-    let form =     
-        <form onSubmit={handleSubmit} className="form">
+    let form =  <div className="form">
+        <h3 className="introText">What word do you want to look up?</h3>
+        <form onSubmit={handleSubmit} >
         <div className="row">
         <div className="col-auto">
             <input type="search" className="form-control" autoFocus={true} onChange={handleWord}></input>
@@ -40,7 +41,8 @@ export default function Dictionary() {
             <input type="submit" className="btn btn-primary"></input>
         </div>
         </div>
-        </form>;
+        </form>
+        </div>;
 
 
     if(definition.loaded) {
