@@ -2,13 +2,33 @@
     margin-top: 20px;
     margin-bottom: 30px;
 }
+.form {
+
+}
 .results {
-    max-width: 90vh;
+    max-width: 96vh;
     text-align: initial;
     margin-right: 40px;
     margin-top: 25px;
 }
+.wordSearch {
+    background-color: #f1f3f4;
+    padding: 10px 20px 10px 30px;
+    border-radius: 10px;
+    box-shadow: 10 30px 10px rgb(241 243 244 / 30%);
+}
 .phonetics {
     font-style: italic;
     color: gray;
+}
+.Meaning {
+    background-color: #f1f3f4;
+    margin-top: 20px;
+    padding: 10px 20px 10px 30px;
+    border-radius: 10px;
+    box-shadow: 10 30px 30px rgb(241 243 244 / 100%);
+}
+li {
+    list-style-type: none;
+
 }

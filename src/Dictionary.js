@@ -6,7 +6,7 @@ import "./Dictionary.css";
 
 export default function Dictionary() {
 
-    const [word, setWord] = useState(null);
+    const [word, setWord] = useState("sunset");
     const [definition, setDefinition] = useState({loaded:false});
 
     function handleResponse(response) {
@@ -18,7 +18,6 @@ export default function Dictionary() {
     }
     //Source documentation: https://dictionaryapi.dev/
     function search(event) {
-        event.preventDefault();
         setDefinition({loaded:true});
         let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${word}`;
         axios.get(apiUrl).then(handleResponse);
@@ -26,8 +25,13 @@ export default function Dictionary() {
     function handleWord(event) {
         setWord(event.target.value);
     }
+
+    function handleSubmit(event) {
+        event.preventDefault();
+        search();
+    }
     let form =     
-        <form onSubmit={search} className="form">
+        <form onSubmit={handleSubmit} className="form">
         <div className="row">
         <div className="col-auto">
             <input type="search" className="form-control" autoFocus={true} onChange={handleWord}></input>
@@ -47,11 +51,7 @@ export default function Dictionary() {
     </div>
     );
     } else {
-        return(
-            <div className="Dictionary">
-                {form}
-            </div>
-            );
+        search();
     }
 
 }

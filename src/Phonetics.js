@@ -7,7 +7,6 @@ export default function Phonetics(props) {
             {props.phonetics.text}<span>     </span>
             <ReactAudioPlayer
             src={props.phonetics.audio}
-            height={5}
             controls
             controlslist
             />   
