@@ -20,28 +20,19 @@
     text-align: initial;
     margin-top: 25px;
 }
-.wordSearch {
+section {
     background-color: #f1f3f4;
     padding: 10px 20px 10px 30px;
     border-radius: 10px;
     box-shadow: 10 30px 10px rgb(241 243 244 / 30%);
+    margin-top: 20px;
 }
-.wordSearch:hover {
+section:hover {
     transform: scale(1.05) perspective(1px);
 }
 .phonetics {
     font-style: italic;
     color: gray;
-}
-.Meaning {
-    background-color: #f1f3f4;
-    margin-top: 20px;
-    padding: 10px 20px 10px 30px;
-    border-radius: 10px;
-    box-shadow: 10 30px 30px rgb(241 243 244 / 100%);
-}
-.Meaning:hover {
-    transform: scale(1.05) perspective(1px);
 }
 .definition {
     margin-bottom: 20px;

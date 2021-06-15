@@ -27,7 +27,7 @@ export default function Dictionary() {
         axios.get(apiUrl).then(handleResponse);
         //API for pexels images:
         let apiKey = "563492ad6f91700001000001919a4aa8017448728906e0e001db0e3b";
-        let pexelsUrl = `https://api.pexels.com/v1/search?query=${word}&per_page=1`;
+        let pexelsUrl = `https://api.pexels.com/v1/search?query=${word}&per_page=4`;
         let headers = {Authorization : `Bearer ${apiKey}`};
         axios.get(pexelsUrl, {headers: headers}).then(handlePictures);
 
@@ -47,7 +47,7 @@ export default function Dictionary() {
         <div className="col-auto">
             <input type="search" className="form-control" autoFocus={true} onChange={handleWord}></input>
         </div>
-        <div className="col-sm-2">
+        <div className="col-sm-3">
             <input type="submit" className="btn btn-primary"></input>
         </div>
         </div>
