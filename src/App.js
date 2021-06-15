@@ -11,7 +11,7 @@ function App() {
       <Dictionary/>
       <footer className="codedby"><span >Coded by Sandra Lopez using React<img src={logo} className="App-logo" alt="logo" />and {" "}
         <a className="code" 
-        href="/" 
+        href="https://github.com/SandyLOC/dictionary_react" 
         target="_blank" 
         rel="noopener noreferrer">
           open sourced on Github</a></span>
