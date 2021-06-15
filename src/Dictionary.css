@@ -1,4 +1,5 @@
 .Dictionary {
+    max-width: 96vh;
     margin-top: 20px;
     margin-bottom: 30px;
 }
@@ -16,7 +17,6 @@
     text-align: left;
 }
 .results {
-    max-width: 96vh;
     text-align: initial;
     margin-top: 25px;
 }
