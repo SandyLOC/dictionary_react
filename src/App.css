@@ -1,6 +1,9 @@
 .App {
   text-align: center;
   background-image:url("universe.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .App-logo {

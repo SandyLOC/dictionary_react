@@ -7,7 +7,7 @@ import "./Dictionary.css";
 
 export default function Dictionary() {
 
-    const [word, setWord] = useState("sunset");
+    const [word, setWord] = useState("universe");
     const [definition, setDefinition] = useState({loaded:false});
     const [photos, setPhotos] = useState(null);
 
@@ -44,10 +44,10 @@ export default function Dictionary() {
         <h3 className="introText">What word do you want to look up?</h3>
         <form onSubmit={handleSubmit} >
         <div className="row">
-        <div className="col-auto">
+        <div className="col-9">
             <input type="search" className="form-control" autoFocus={true} onChange={handleWord}></input>
         </div>
-        <div className="col-sm-3">
+        <div className="col-3">
             <input type="submit" className="btn btn-primary"></input>
         </div>
         </div>
